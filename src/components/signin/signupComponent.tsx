@@ -17,7 +17,7 @@ export default function SignUpComponent (props: any) {
         data.append("password", props.passwordRef.current.value);
 
         try {
-            const response = await fetch("http://localhost:4000/new/account", {
+            const response = await fetch("https://marketplace-backend-874fojx4w-trollermaner.vercel.app/new/account", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',

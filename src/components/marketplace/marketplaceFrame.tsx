@@ -9,7 +9,7 @@ export default function Marketplace() {
     useEffect(()=>{
         const getItems = async () => {
             try{
-                const response = await fetch("http://localhost:4000/list/items", {
+                const response = await fetch("https://marketplace-backend-874fojx4w-trollermaner.vercel.app/list/items", {
                     method: "GET"
                 })
 

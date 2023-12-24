@@ -16,7 +16,7 @@ export default function LoginComponent (props: any) {
         data.append("password", props.passwordRef.current.value);
       
         try {
-          const response = await fetch("http://localhost:4000/login", {
+          const response = await fetch("https://marketplace-backend-874fojx4w-trollermaner.vercel.app/login", {
             method: 'POST',
             headers: {
               'Content-Type': 'application/x-www-form-urlencoded',

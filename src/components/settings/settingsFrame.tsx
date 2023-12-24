@@ -4,7 +4,7 @@ export default function Settings(props: any){
 
     const handleLogOut = async () => {
         try {
-            const response = await fetch('http://localhost:4000/logout', {
+            const response = await fetch('https://marketplace-backend-874fojx4w-trollermaner.vercel.app/logout', {
               method: 'GET',
               credentials: 'include', // Send cookies with the request
             });

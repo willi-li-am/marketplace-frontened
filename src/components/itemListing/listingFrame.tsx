@@ -14,7 +14,7 @@ export default function Listing(){
         const getListing = async () => {
             setLoading(true)
             try {
-                const response = await fetch('http://localhost:4000/list/listings', {
+                const response = await fetch('https://marketplace-backend-874fojx4w-trollermaner.vercel.app/list/listings', {
                   method: 'GET',
                   credentials: 'include', // Send cookies with the request
                 });

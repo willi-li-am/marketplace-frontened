@@ -31,7 +31,7 @@ export default function ItemPage({setCart, cart} :any){
     useEffect(() => {
         const getItem = async () => {
             try {
-                const response = await fetch('http://localhost:4000/item?productId=' + productId, {
+                const response = await fetch('https://marketplace-backend-874fojx4w-trollermaner.vercel.app/item?productId=' + productId, {
                   method: 'GET',
                 });
                 

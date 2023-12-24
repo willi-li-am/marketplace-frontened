@@ -42,7 +42,7 @@ export default function UpdateListing(props:any){
             const data = new URLSearchParams
             data.append("productId", productId)
             try{
-                const response = await fetch('http://localhost:4000/owner/item', {
+                const response = await fetch('https://marketplace-backend-874fojx4w-trollermaner.vercel.app/owner/item', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/x-www-form-urlencoded',
@@ -65,7 +65,7 @@ export default function UpdateListing(props:any){
     useEffect(() => {
         const getItem = async () => {
             try {
-                const response = await fetch('http://localhost:4000/item?productId=' + productId, {
+                const response = await fetch('https://marketplace-backend-874fojx4w-trollermaner.vercel.app/item?productId=' + productId, {
                   method: 'GET',
                 });
                 
@@ -138,7 +138,7 @@ export default function UpdateListing(props:any){
 
         else{
             try {
-                const response = await fetch("http://localhost:4000/update/item", {
+                const response = await fetch("https://marketplace-backend-874fojx4w-trollermaner.vercel.app/update/item", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded',

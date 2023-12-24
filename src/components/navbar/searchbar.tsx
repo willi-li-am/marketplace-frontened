@@ -6,7 +6,7 @@ import NavLink from "./navLink"
 export default function SearchBar(props: any){
     const searchInput:any = useRef("")
 
-    //function to search items http://localhost:4000/list/items?search= smth like that
+    //function to search items https://marketplace-backend-874fojx4w-trollermaner.vercel.app/list/items?search= smth like that
     return(
         <div className="flex flex-row items-center ml-[75px]">
             <NavLink navigate="/"><div className="font-semibold text-[25px]">Marketplace</div></NavLink>

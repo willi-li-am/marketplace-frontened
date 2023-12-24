@@ -29,7 +29,7 @@ function App() {
     // Create a function to send a request to the backend to check login status
     const checkLoginStatus = async () => {
       try {
-        const response = await fetch('http://localhost:4000/', {
+        const response = await fetch('https://marketplace-backend-874fojx4w-trollermaner.vercel.app/', {
           method: 'GET',
           credentials: 'include', // Send cookies with the request
         });
